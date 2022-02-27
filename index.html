@@ -10,14 +10,17 @@
         <h1>Item's List</h1>
         <div class="addItem">
             <input ng-model="newItem" placeholder="Add Item" class="addText">
+            <input ng-model="newPrice" placeholder="Add price" class="addPrice">
             <button ng-click="pushItem()">Add</button>
         </div>
         <ul>
             <li ng-repeat="item in items">
-                {{item}}
+                Name: {{item.name}} | Price: {{item.price}}
                 <span ng-click="deleteItem($index)">x</span>
             </li>
         </ul>
+        <h3>The total price is: {{getPrice.price}}</h3>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>

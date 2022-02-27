@@ -41,11 +41,16 @@ li span{
 }
 
 .addText {
-    width: 80%;
+    width: 40%;
     height: 30px;
 }
 
 .addItem button {
     height: 35px;
     width: 50px;
+}
+
+.addPrice {
+    width: 13%;
+    height: 30px;
 }
